@@ -1,0 +1,409 @@
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*******************
+MEDIA QUERIES
+*******************/
+
+/*******************
+START MOBILE PHONES
+*******************/
+@media only screen and (max-width: 400px){ 
+/* BODY: */
+    body{
+        background-color: #788D8D;
+    }
+    /* END BODY: */
+
+    /* START HEADER */
+    /* START HEADER IMG */
+   
+        /* END HEADER IMG*/
+ 
+    /* START h1,h2,p*/    
+    h1 {
+        font-family: 'Futura','Arial', sans-serif;
+    }
+    
+    h2 {
+        font-family: 'bree_serifregular', 'Arial', Sans-serif;   
+    }
+    
+    p {
+        line-height: 1.5em;
+    }
+    /* END h1,h2,p*/
+
+    /* START HEADER NAME */
+    .name {
+        color: aliceblue;
+        text-align: center;
+        margin-top: -43%;
+        font-size: 9pt;
+    }
+    /* END HEADER NAME*/
+
+    /* START HEADER INFO */
+    .headinfo {
+        margin-top: 7%;
+        color: aliceblue;
+        text-align: center;
+        font-family: 'Futura','Arial', sans-serif;
+        font-size: 9pt; 
+    }
+    /* END HEADER INFO*/
+
+    
+
+    /* START FLEX-CONTAINER */
+    .container{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    .flex-container{
+        background-color: floralwhite;
+        margin: 5% 5% 5% 5%;
+        text-align: center;
+        line-height: 1.5em;
+        padding:3%;
+        box-sizing: border-box;
+        font-family: 'Helvetica', 'Arial', 'sans-serif'; 
+    }
+    /* Här borde kolumnerna byta plats */   
+    .flex-container:nth-child(1){
+        order: 2;
+        margin-top: 120px;
+    }
+    
+    .flex-container:nth-child(2){
+        order: 1;
+        margin-top: 120px;
+    }
+    
+    .flex-container:nth-child(3){
+        order: 3;
+        margin-top: 120px;
+    }
+    /* END FLEX-CONTAINER */
+
+    /* START ARTICLE IMAGE */
+    article img {
+        height: 200px;
+        width: 200px;
+        border-radius: 120px;
+        margin-top: -110px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        border: solid 15px #fff;
+    } 
+    /* END ARTICLE IMAGE */
+
+    /* START WRAPPER */ 
+    #wrapper {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    /* END WRAPPER */
+
+    /* START FOOTER */    
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #FFD175; 
+        width: 100%;
+        height: 120px;
+        padding-top: 30px;
+        font-size: 9pt;
+        font-family: 'Futura','Arial', sans-serif;
+        text-align: center;
+        line-height: 1.5em; 
+    }
+
+    .footer-nav {
+        box-sizing: border-box;
+        flex-basis: auto;
+        margin-top: -20%;
+        margin-right: -25%;    
+        }
+
+    .footer-info{
+          box-sizing: border-box;
+        flex-basis: 10%;
+        margin-left: -20%;
+        margin-bottom: -10%;
+        margin-right: -9%;
+    }
+    /* END FOOTER */
+
+    }
+    /*******************
+    END MOBILE PHONES
+    *******************/
+
+    /*******************
+    START TABLET
+    *******************/
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    body {
+        background-color: #788D8D; 
+        width: 100%;
+    }
+    
+    h1 {
+        font-family: 'Futura','Arial', sans-serif;
+    }
+    
+    h2 {
+        font-family: 'bree_serifregular', 'Arial', Sans-serif;   
+    }
+    
+    p {
+        line-height: 1.5em;
+    }
+    
+    
+    /* END HEADER IMAGE */
+    
+    /* START HEADER NAME */
+    .name {
+        color: aliceblue;
+        text-align: center;
+        margin-top: -43%;
+        font-size: 13pt;
+    }
+    /* END HEADER NAME*/
+
+    /* START HEADER INFO */
+    .headinfo {
+        margin-top: 10%;
+        color: aliceblue;
+        text-align: center;
+        font-family: 'Futura','Arial', sans-serif;
+    }
+    /* END HEADER INFO*/
+
+
+    /* END HEADER*/
+
+    /* START FLEX-CONTAINER */
+     .container{
+         display: flex;
+         flex-direction: column;
+         align-content: center;
+         justify-content: center;
+    }
+    .flex-container{
+        background-color: floralwhite;
+        margin: 12% 5% 5%;
+        text-align: center;
+        line-height: 1.5em;
+        padding:3%;
+        box-sizing: border-box;
+        font-family: 'Helvetica', 'Arial', 'sans-serif'; 
+    }
+
+
+    /* END FLEX-CONTAINER */
+    /* START ARTICLE IMAGE */
+    article img {
+        height: 200px;
+        width: 200px;
+        border-radius: 120px;
+        margin-top: -110px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        border: solid 15px #fff;
+    } 
+    /* END ARTICLE IMAGE */
+    /* START WRAPPER */ /* MÅSTE DENNA VA MED?! PADDING TOP FÖR ATT FÅ KOLUMNERNA PÅ RÄTT PLATS */
+    #wrapper {
+       margin-top: 100px;
+    /* END WRAPPER */    
+    } 
+    footer {
+        display: flex;
+        justify-content: space-around;
+        background-color: #FFD175;
+        align-items: center;
+        width: 100%;
+        height: 170px;
+        padding-top: 30px;
+        font-size: 12pt;
+        font-family: 'Futura','Arial', sans-serif;
+        text-align: center;
+        line-height: 1.5em;
+
+    }
+
+    /* START FOOTER */
+    .footer-nav {
+        box-sizing: border-box;
+        flex-basis: 10%;
+        margin-top: -15%;
+        margin-right: -25%;    
+        }
+    .footer-info{
+          box-sizing: border-box;
+        flex-basis: 10%;
+        margin-left: -18%;
+        margin-bottom: -5%;
+        margin-right: -9%;
+        }
+    /* END FOOTER */
+    /* END FOOTER */
+
+
+    }
+
+ /*******************
+END TABLET
+*******************/ 
+
+ /*******************
+START DESKTOP
+*******************/ 
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+    body {
+        background-color: #788D8D;
+        width: 100%;;
+        margin: 0 auto;
+      }
+    
+   
+        /* START DEKSTOP HEADER NAME */
+    h1 {
+        font-family: 'Futura','Arial', sans-serif;
+        font-size: 20pt;
+        }
+
+    h2 {
+         font-family: 'bree_serifregular', 'Arial', Sans-serif;   
+        }
+
+    p {
+        line-height: 1.5em;
+        }
+    
+    .name {
+        color: aliceblue;
+        text-align: left;
+        margin-top: -42%;
+        margin-left: 2%; 
+    }
+    /* END DESKTOP HEADER NAME*/
+
+    /* START DESKTOP HEADER INFO */
+     .headinfo {
+         margin-top: 13%;
+         margin-right: 2%;
+        color: aliceblue;
+        text-align: right;
+        font-family: 'Futura','Arial', sans-serif;
+        font-size: 13pt;
+    }
+    /* END HEADER INFO*/
+
+   
+
+/* END DESKTOP HEADER*/
+
+/* START DESKTOP FLEX-CONTAINER */
+  .container {
+       display: flex;
+       justify-content: space-between;
+       align-items: flex-start;
+    }
+    
+ .flex-container{
+        background-color: floralwhite;
+        text-align: center;
+        padding:1%;
+        box-sizing: border-box;
+        margin: 2% 1% 1%;
+        width: 30%;
+        font-family: 'Helvetica', 'Arial', 'sans-serif'; 
+
+    } 
+    /* END DESKTOPFLEX-CONTAINER */
+
+    /* START DESKTOP ARTICLE IMAGE */
+    article img {
+        height: 200px;
+        width: 200px;
+        border-radius: 120px;
+        margin-top: -110px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        border: solid 15px #fff;
+    } 
+    /* END DESKTOP ARTICLE IMAGE */
+
+    /* START DESKTOP WRAPPER */    
+    #wrapper { 
+       margin-top: 22%;
+       text-align: center;
+
+    } 
+    /* END DESKTOP WRAPPER */    
+
+     /* START DESKTOP FOOTER */   
+    footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #FFD175; 
+        width: 100%;
+        height: 120px;
+        padding-top: 30px;
+        font-size: 15pt;
+        font-family: 'Futura','Arial', sans-serif;
+        text-align: center;
+        line-height: 1.5em;
+    }
+
+    .footer-nav {
+        box-sizing: border-box;
+        flex-basis: 10%;
+        margin:-90px 0 0 150px;  
+    }
+    
+    .footer-info{
+        box-sizing: border-box;
+        flex-basis: 10%;
+        margin-left: -22%;
+        margin-bottom: -40px;
+    }
+
+/* END DESKTOP FOOTER */
+    
+}
+ /*******************
+END DESKTOP
+*******************/ s
